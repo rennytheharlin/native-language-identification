@@ -1,0 +1,21 @@
+{
+  "sample_rate": 16000,
+  "chunk_seconds": 10,
+  "mfcc": {
+    "coefficients": 20,
+    "deltas": 2,
+    "n_fft": 400,
+    "hop_length": 160,
+    "n_mels": 40
+  },
+  "hubert": {
+    "model": "facebook/hubert-base-ls960",
+    "revision": "dba3bb02fda4248b6e082697eee756de8fe8aa8a",
+    "layer": 6,
+    "pooling": "frame mean and standard deviation"
+  },
+  "torch": "2.8.0+cu128",
+  "torchaudio": "2.8.0+cu128",
+  "extractor_device": "cuda:0",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

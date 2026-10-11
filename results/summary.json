@@ -1,0 +1,51 @@
+{
+  "mfcc": {
+    "speaker": {
+      "accuracy": 0.744,
+      "balanced_accuracy": 0.7409420289855073,
+      "macro_f1": 0.7384660018560403
+    },
+    "utterance": {
+      "accuracy": 0.6386129334582943,
+      "balanced_accuracy": 0.633653874666672,
+      "macro_f1": 0.6316172130697641
+    }
+  },
+  "hubert": {
+    "speaker": {
+      "accuracy": 0.832,
+      "balanced_accuracy": 0.8194444444444444,
+      "macro_f1": 0.8263807667316438
+    },
+    "utterance": {
+      "accuracy": 0.8061855670103093,
+      "balanced_accuracy": 0.7954889110338039,
+      "macro_f1": 0.7999666387829244
+    }
+  },
+  "bootstrap_95pct": {
+    "mfcc_speaker_macro_f1": [
+      0.6611282119170463,
+      0.8130091467120508
+    ],
+    "hubert_speaker_macro_f1": [
+      0.7548071512886091,
+      0.8869746293756661
+    ],
+    "hubert_minus_mfcc": [
+      0.006710998091884604,
+      0.16646134079386748
+    ]
+  },
+  "cohort": {
+    "test_utterances": 5335,
+    "test_speakers": 125,
+    "test_speakers_by_language": {
+      "Hindi": 36,
+      "Kannada": 18,
+      "Malayalam": 24,
+      "Tamil": 24,
+      "Telugu": 23
+    }
+  }
+}

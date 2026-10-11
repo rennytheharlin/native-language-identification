@@ -1,0 +1,4 @@
+.venv/
+data/audio/
+features/*_cache/
+__pycache__/
